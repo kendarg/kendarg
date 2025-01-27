@@ -1,1 +1,141 @@
+body{
+
+border: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+  
+html{
+height: 100%;
+font-size: 14px;
+font-family: 'Poppins', sans-serif;
+
+}
+body{
+height: 100%;
+}
+.hero-section {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    }
+.card-container{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    list-style: none;
+    width: 220px;
+    transition: .3s ease;
+}
+.card::before{
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+.card-backgraund{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+}
+.card:hover .card-backgraund{
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+}
+.card-container:hover.card:not(:hover){
+    transform: scale(.9);
+}
+.card-container:hover > .card:not(:hover) .card-backgraund,
+.card-container:hover > .card:not(:hover) .card-category, 
+.card-container:hover > .card:not(:hover) h3{
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+
+}
+.content{
+    top: 50%;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+}
+
+.card-category{
+    color: beige;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: uppercase;
+    color: transparent;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.678),1px 1px 0 rgba(255, 255, 255, 0.678);
+color: rgb(32, 18, 18);
+}
+.card-eading{
+    color: #fff;
+    font-size: 25px;
+    line-height: 1;
+    text-shadow: 2px 2px 20px rgba(0,0, 0. .2);
+}
+header{
+    display:flex;
+    min-height: 70px;
+    background-color: rgb(209, 209, 209);
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a{
+    flex-direction: center;  
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+@media ( max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+h3{
+color: transparent;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.678),1px 1px 0 rgba(255, 255, 255, 0.678);
+color: rgb(32, 18, 18);
+
+}
+
 
