@@ -6,8 +6,6 @@ padding: 0;
 box-sizing: border-box;
 
 }
-
-  
 html{
 height: 100%;
 font-size: 14px;
@@ -22,7 +20,7 @@ height: 100%;
     min-height: 100%;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(121, 88, 212, 0.699);
     }
 .card-container{
     display: flex;
@@ -64,8 +62,7 @@ height: 100%;
     transform: scale(.9);
 }
 .card-container:hover > .card:not(:hover) .card-backgraund,
-.card-container:hover > .card:not(:hover) .card-category, 
-.card-container:hover > .card:not(:hover) h3{
+.card-container:hover > .card:not(:hover) .card-category{
     filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
 
 }
@@ -82,9 +79,6 @@ height: 100%;
     font-weight: 500;
     letter-spacing: 5px;
     margin-bottom: uppercase;
-    color: transparent;
-text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.678),1px 1px 0 rgba(255, 255, 255, 0.678);
-color: rgb(32, 18, 18);
 }
 .card-eading{
     color: #fff;
@@ -92,49 +86,3 @@ color: rgb(32, 18, 18);
     line-height: 1;
     text-shadow: 2px 2px 20px rgba(0,0, 0. .2);
 }
-header{
-    display:flex;
-    min-height: 70px;
-    background-color: rgb(209, 209, 209);
-    justify-content: space-between;
-    align-items: center;
-
-    font-family: "Permanent Marker", serif;
-  font-weight: 400;
-  font-style: normal;
-    }
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    height: 50px;
-    margin-right: 10px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-nav a{
-    flex-direction: center;  
-    font-weight: 600;
-    padding-right: 10px;
-}
-nav a:hover{
-    color: white;
-}
-@media ( max-width:700px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-    }
-}
-h3{
-color: transparent;
-text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.678),1px 1px 0 rgba(255, 255, 255, 0.678);
-color: rgb(32, 18, 18);
-
-}
-
