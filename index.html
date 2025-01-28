@@ -1,67 +1,137 @@
 <!DOCTYPE html>
-<html lang="esp">
+<html lang="en">
 <head>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombia shoes</title>
-    <link rel="stylesheet" href="CSS\inicio.css">
-    <link rel="stylesheet" href="JS\inicio.js">
+    <title>Colombia Shoes</title>
     <link rel="icon" href="imagenes\LOGO\Imagen2.ico">
+    <link rel="stylesheet" href="CSS\Estructura.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">
-            <img src="imagenes\LOGO\Imagen2.png" alt="logo">
-            <h2 class="nombre-empresa">Colombia shoes</h2>
-        </a>
-        <div>
-            <nav>
-                <a href="" class="nav-link">HOMBRES</a>
-                <a href="" class="nav-link">MUJERES</a>
-                <a href="" class="nav-link">INFANTIL</a>
+<header>
+    <!-- Este codigo es toda la parte superior -->
+    <a href="index.html" class="logo">
+        <img src="imagenes/LOGO/logo (2).png" alt="logo de la compañia">
+        <h2 class="nombre-empresa">Colombia Shoes</h2>
+    </a>
+    <nav>
+        <a href="HTML/Catalogo.html" class="nav-link">°Catalogo</a>
+        <a href="#" class="nav-link">°Hombres</a>
+        <a href="#" class="nav-link">°Mujeres</a>
+        <a href="#" class="nav-link">°Infantil</a>
+        <a href="HTML/Asesores.html" class="nav-link">°Asesores</a>
+        <a href="#" class="nav-link">°Ingresar</a>
+    </nav>
+</header>
+
+
+<section class="ofert container">
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="imagenes/NIKE/foto_1.jpg" alt="">
+        </div>
+        <div class="ofertas-txt">
+            <h3>Nikes</h3>
+            <a href="#" class="btn-2">informacion</a>
+        </div>
+    </div>
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="imagenes/ADIDDAS/foto_3.jpg" alt="">
+        </div>
+        <div class="ofertas-txt">
+            <h3>Adidas</h3>
+            <a href="#" class="btn-2">informacion</a>
+        </div>
+    </div>
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="imagenes/GICCI/foto_4.jpg" alt="">
+        </div>
+        <div class="ofertas-txt">
+            <h3>Gucci</h3>
+            <a href="#" class="btn-2">informacion</a>
+        </div>
+    </div>
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="imagenes/PUMA/foto_2.jpg" alt="">
+        </div>
+        <div class="ofertas-txt">
+            <h3>Puma</h3>
+            <a href="#" class="btn-2">informacion</a>
+        </div>
+    </div>
+</section>
+
+<main class="products container" id="lista-1">
+    <h2>PRINCIPALES</h2> 
+    <div class="product-content">
+        <div class="product">
+            <img src="zapatos/imagen1.jpeg" alt="">
+            <h3>New Balance abzorb 530</h3>
+            <p class="categoria">New Balance</p>
+            <p>$85.000</p>
+            <a href="#" class="btn-2">Informacion</a>
+        </div>
+        <div class="product">
+            <img src="zapatos/imagen2.jpeg" alt="">
+            <h3>New Balance abzorb 530</h3>
+            <p class="categoria">New Balance</p>
+            <p>$85.000</p>
+            <a href="#" class="btn-2">Informacion</a>
+        </div>
+        <div class="product">
+            <img src="zapatos/imagen3.jpeg" alt="">
+            <h3>New Balance abzorb 530</h3>
+            <p class="categoria">New Balance</p>
+            <p>$85.000</p>
+            <a href="#" class="btn-2">Informacion</a>
+        </div>
+        <div class="product">
+            <img src="zapatos/imagen4.jpeg" alt="">
+            <h3>New Balance abzorb 530</h3>
+            <p class="categoria">New Balance</p>
+            <p>$85.000</p>
+            <a href="#" class="btn-2">Informacion</a>
+        </div>
+        <div class="product">
+            <img src="zapatos/imagen5.jpeg" alt="">
+            <h3>New Balance abzorb 530</h3>
+            <p class="categoria">New Balance</p>
+            <p>$85.000</p>
+            <a href="#" class="btn-2">Informacion</a>
+        </div>
+        <div class="product">
+            <img src="zapatos/imagen6.jpeg" alt="">
+            <h3>New Balance abzorb 530</h3>
+            <p class="categoria">New Balance</p>
+            <p>$85.000</p>
+            <a href="#" class="btn-2">informacion</a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container container">
+        <div class="link">
+            <h3>complemento</h3>
+            <nav class="footer-tex">
+                <ul>
+                    <li><a href="HTML/Asesores.html">Asesor</a></li>
+                    <li><a href="HTML/Catalogo.html">Catalogo</a></li>
+                    <li><a href="#">Hombres</a></li>
+                    <li><a href="#">Mujeres</a></li>
+                    <li><a href="#">Infantil</a></li>
+                </ul>
             </nav>
         </div>
+    </div>
+</footer>
 
-    </header>
-<section class="hero-section">
- <div class="card-container">
-    <div class="card">
-        <a href="#" class="card-backgraund" style="background-image: url(imagenes/NIKE/foto_1.jpg);"></a>
-        <div class="content">
-            <div class="card-category">NIKE</div>
-            <h3 class="card-heading">$ 85.000</h3>
-        </div>
-    </div>
-    <div class="card">
-        <a href="#" class="card-backgraund" style="background-image: url(imagenes/PUMA/foto_2.jpg);"></a>
-        <div class="content">
-            <div class="card-category">PUMA</div>
-            <h3 class="card-heading">$ 85.000</h3>
-        </div>
-    </div>
-    <div class="card">
-        <a href="#" class="card-backgraund" style="background-image: url(imagenes/ADIDDAS/foto_3.jpg);"></a>
-        <div class="content">
-            <div class="card-category">ADIDAS</div>
-            <h3 class="card-heading">$ 85.000</h3>
-        </div>
-    </div>
-    <div class="card">
-        <a href="#" class="card-backgraund" style="background-image: url(imagenes/GICCI/foto_4.jpg);"></a>
-        <div class="content">
-            <div class="card-category">GUCCI</div>
-            <h3 class="card-heading">$ 85.000</h3>
-        </div>
-    </div>
- </div>
-</section>
+<script src="scrip.js"></script>
 </body>
 </html>
-
-
-
-
-
