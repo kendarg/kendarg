@@ -162,6 +162,8 @@ nav a:hover{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+
+/* lista desplegable y encabezado */
 ul{
     list-style: none;
     background: #f5f5f5;
