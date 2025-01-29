@@ -1,0 +1,129 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  height: 100%;
+}
+
+html{
+    height: 100%;
+    font-size: 14px;
+    font-family:'sora',serif ;
+}
+
+.hero-section{
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    background-color: white;
+
+}
+.card-container{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+
+}
+.card{
+    position: relative;
+    list-style: none;
+    width: 220px;
+    transition: .3s ease;
+}
+.card::before{
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+
+.card-background{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 380px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin:bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+}
+
+.card:hover .card-background{
+    transform: scale(1.15) translate(0);
+    background-size: 320px;
+    
+   
+}
+
+header{    
+    display: flex;
+    min-height: 70px;
+    background-color: rgba(255, 255, 255, 0.829);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+     
+.logo{
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 50px;
+    margin-right:10px ;
+    color: black;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 90px;
+}
+nav a:hover{
+    color: grey;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+
+
+
+
+/* botones */
+.btn-2{
+    display: flex;
+    align-items: center;
+    color: rgb(77, 160, 60);
+}
+.btn-2{
+    display: inline-block;
+    padding: 1px 2px;
+    background-color: rgb(76, 148, 73);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-decoration: none;
+}
